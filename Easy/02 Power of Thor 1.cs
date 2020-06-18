@@ -30,7 +30,9 @@ class Player
             //움직여야 할 방향
             var dir = "";
 
-            //8방 중 한 방향 정하기
+            //삼각형을 그려서 8방 중 한 방향 정하기
+            // - h = a + b라면? 직선이동 ( 8방중 하나)
+            // - h > a + b라면? h = a + b가 될 때까지 이동하기
 
 
             // A single line providing the move to be made: N NE E SE S SW W or NW
