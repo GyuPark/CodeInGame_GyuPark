@@ -21,39 +21,28 @@ class Player
         int initialTx = int.Parse(inputs[2]); // Thor's starting X position
         int initialTy = int.Parse(inputs[3]); // Thor's starting Y position
 
+        // - initial displacement 계산
+        int displacementX = lightX - initialTx;
+        int displacementY = lightY - initialTy;
+
+        //current Thor position variables
+        int currentTx = 0;
+        int currentTy = 0;
+
+        //current displacement of Thor from Light
+        int currentDisplacementX = 0;
+        int currentDisplacementY = 0;
+
         // game loop
         while (true)
         {
             int remainingTurns = int.Parse(Console.ReadLine()); // The remaining amount of turns Thor can move. Do not remove this line.
 
-            //움직여야 할 방향
             var dir = "";
 
-            //삼각형(h, a, b)을 그려서 8방 중 한 방향 정하기
-            var displacementX = lightX - initialTx; //b
-            var displacementY = lightY - initialTy; //a
 
-            var angle = 0d;
 
-            if (displacementX == 0)
-            {
-                if (displacementY < 0)
-                {
-
-                }
-                else if (displacementY > 0)
-                {
-
-                }
-            }
-            else
-            {
-                angle = Math.Atan(displacementY / displacementX); //theta
-            }
-
-            Console.Error.WriteLine("Debug " + angle);
-
-            // A single line providing the move to be made: N NE E SE S SW W or NW
+            // 8방중 한 방향
             Console.WriteLine(dir);
         }
     }
