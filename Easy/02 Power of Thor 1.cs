@@ -34,28 +34,24 @@ class Player
 
             var displacementX = lightX - currentTx; //현재 위치에서 lightX까지의 x거리
             var displacementY = lightY - currentTy; //현재 위치에서 lighty까지의 y거리
+            var absDisplacementX = Math.Abs(displacementX);
+            var absDisplacementY = Math.Abs(displacementY);
 
-            //수평 수직이동
-            if (Math.Abs(displacementX) != Math.Abs(displacementY))
+            //a와 b의 길이가 같지 않다면 수평/수직이동 한다.
+            if (absDisplacementX != absDisplacementY)
             {
-                if ()
+                //X축으로 먼저 이동
+                if (absDisplacementX > absDisplacementY)
                 {
 
                 }
-                else if ()
-                {
-
-                }
-                else if ()
-                {
-
-                }
+                //y축으로 먼저 이동
                 else
                 {
 
                 }
             }
-            // - 같다면 대각선 이동한다.
+            // a 와 b가 같으면 직각 이등변 삼각형이므로 빗변을 따라 대각선 이동한다.
             else
             {
                 //NE
