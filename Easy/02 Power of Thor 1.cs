@@ -34,8 +34,8 @@ class Player
 
             var displacementX = lightX - currentTx; //현재 위치에서 lightX까지의 x거리
             var displacementY = lightY - currentTy; //현재 위치에서 lighty까지의 y거리
-            var absDisplacementX = Math.Abs(displacementX);
-            var absDisplacementY = Math.Abs(displacementY);
+            var absDisplacementX = Math.Abs(displacementX); //displacementX의 절대값
+            var absDisplacementY = Math.Abs(displacementY); //displacementY의 절대값
 
             //a와 b의 길이가 같지 않다면 수평/수직이동 한다.
             if (absDisplacementX != absDisplacementY)
@@ -43,36 +43,63 @@ class Player
                 //X축으로 먼저 이동
                 if (absDisplacementX > absDisplacementY)
                 {
+                    if (displacementX > 0)
+                    {
+                        dir = "E";
+                        currentTx++;
+                    }
+                    else
+                    {
+                        dir = "W";
+                        currentTx--;
+                    }
 
                 }
                 //y축으로 먼저 이동
                 else
                 {
-
+                    if (displacementY > 0)
+                    {
+                        dir = "S";
+                        currentTy++;
+                    }
+                    else
+                    {
+                        dir = "N";
+                        currentTy--;
+                    }
                 }
             }
             // a 와 b가 같으면 직각 이등변 삼각형이므로 빗변을 따라 대각선 이동한다.
             else
             {
                 //NE
-                if ()
+                if (displacementX > 0 && displacementY < 0)
                 {
-
+                    dir = "NE";
+                    currentTx++;
+                    currentTy--;
                 }
                 //SE
-                else if ()
+                else if (displacementX > 0 && displacementY > 0)
                 {
-
+                    dir = "SE";
+                    currentTx++;
+                    currentTy++;
                 }
                 //SW
-                else if ()
+                else if (displacementX < 0 && displacementY > 0)
                 {
-
+                    dir = "SW";
+                    currentTx--;
+                    currentTy++;
                 }
                 //NW
                 else
                 {
-
+                    dir = "NW";
+                    currentTx--;
+                    currentTy--;
                 }
             }
 
