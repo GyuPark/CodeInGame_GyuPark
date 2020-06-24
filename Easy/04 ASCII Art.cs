@@ -69,13 +69,10 @@ class Solution
             }
         }
 
-
-
         //ASCII ART를 만들어보자
         for (int i = 0; i < H; i++)
         {
             var str = "";
-
 
             for (int j = 0; j < indexForEachTElement.Length; j++)
             {
@@ -84,9 +81,7 @@ class Solution
 
             Console.WriteLine(str);
         }
-
     }
-
 
     static int GetStringIndex(string wholeString, string query)
     {
