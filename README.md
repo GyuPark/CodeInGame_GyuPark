@@ -1,2 +1,2 @@
-# CodeInGame_GyuPark
- CodeInGame solutions!
+# Codingame_Gyu
+my Codingame solutions :-)
