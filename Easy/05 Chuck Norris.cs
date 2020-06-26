@@ -33,14 +33,21 @@ class Solution
             //keys_in_binary[i] = decimal 에서 binary로 변환한 걸 string으로 저장
         }
 
+        ////key ( symbol ) 저장할 컬랙션
+        //var symbols = "";
+        //for (int i = startingNumber; i <= endingNumber; i++) //ASCII 문자를 인코딩해서 넣어주기
+        //{
+        //    symbols += (char)i; //인코딩
+        //    //Console.Error.WriteLine(symbols);
+        //}
+        //string[] symbols_in_string = symbols.Split(); //안될듯
+
         //key ( symbol ) 저장할 컬랙션
-        var symbols = "";
+        string[] symbols_in_string = new string[arraySize];
         for (int i = startingNumber; i <= endingNumber; i++) //ASCII 문자를 인코딩해서 넣어주기
         {
-            symbols += (char)i; //인코딩
-            //Console.Error.WriteLine(symbols);
+            symbols_in_string[i - startingNumber] = (char)i.ToString();
         }
-        string[] symbols_in_string = symbols.Split();
 
         //Dictionary key-value 설정하기
         for (int i = 0; i < arraySize; i++)
