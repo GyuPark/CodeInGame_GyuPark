@@ -1,0 +1,14 @@
+C:\Users\gyuti\Desktop\백준알고리즘풀이\백준알고리즘풀이\bin\Debug\백준알고리즘풀이.exe.config
+C:\Users\gyuti\Desktop\백준알고리즘풀이\백준알고리즘풀이\bin\Debug\백준알고리즘풀이.exe
+C:\Users\gyuti\Desktop\백준알고리즘풀이\백준알고리즘풀이\bin\Debug\백준알고리즘풀이.pdb
+C:\Users\gyuti\Desktop\백준알고리즘풀이\백준알고리즘풀이\obj\Debug\백준알고리즘풀이.csprojAssemblyReference.cache
+C:\Users\gyuti\Desktop\백준알고리즘풀이\백준알고리즘풀이\obj\Debug\백준알고리즘풀이.csproj.CoreCompileInputs.cache
+C:\Users\gyuti\Desktop\백준알고리즘풀이\백준알고리즘풀이\obj\Debug\백준알고리즘풀이.exe
+C:\Users\gyuti\Desktop\백준알고리즘풀이\백준알고리즘풀이\obj\Debug\백준알고리즘풀이.pdb
+D:\Algorithms\백준알고리즘풀이\백준알고리즘풀이\bin\Debug\백준알고리즘풀이.exe.config
+D:\Algorithms\백준알고리즘풀이\백준알고리즘풀이\bin\Debug\백준알고리즘풀이.exe
+D:\Algorithms\백준알고리즘풀이\백준알고리즘풀이\bin\Debug\백준알고리즘풀이.pdb
+D:\Algorithms\백준알고리즘풀이\백준알고리즘풀이\obj\Debug\백준알고리즘풀이.csprojAssemblyReference.cache
+D:\Algorithms\백준알고리즘풀이\백준알고리즘풀이\obj\Debug\백준알고리즘풀이.csproj.CoreCompileInputs.cache
+D:\Algorithms\백준알고리즘풀이\백준알고리즘풀이\obj\Debug\백준알고리즘풀이.exe
+D:\Algorithms\백준알고리즘풀이\백준알고리즘풀이\obj\Debug\백준알고리즘풀이.pdb

@@ -1,0 +1,78 @@
+private variables should begin their names with an underscore
+
+Toggle on and off : component.enabled = !component.enabled
+Invoke()
+LookAt()
+Time.timeScale = 0.25f; "유저와 나만 빠르게 보는 게 가능한가?"
+
+<Post-Processing>
+
+<Destructible Crate>
+void Update()
+{
+	if(Input.GetKeyDown(KeyCode.Space))
+	{
+		//Instantiate Particle Effect
+		Instantiate(explosionEffect, transform.position, Quaternion.identity);
+		//Instantiate Fractured GameObject
+		GameObject fracturedCratedObj = Instantiate(fracturedCrate, transform.position, Quaternion.identity);
+		//Collect its children's Rigidbodies in an array
+		Rigidbody[] allRigidBodies = fracturedCratedObj.GetComponentsInChildren<Rigidbody>();
+		//Confirm this and apply ExplosionForce to each child
+		if (allRigidBodies.Length > 0)
+		{
+			foreach(var body in allRigidBodies) //var is a universal data type, and automatically recognizes the right data type, which in this case is Rigidbody.
+			{
+				body.AddExplosionForce(500,transform.position, 1);
+			}
+		}
+		//Destroy the Solid GameObject
+		Destroy(this.gameObject);
+	}
+}
+
+
+<Rotation>
+Quaternion(x,y,z,w) => Euler(x,y,z)
+Always handle rotation through quaternions, to prevent gimbal lock.
+https://www.youtube.com/watch?v=zc8b2Jo7mno
+
+Instantiate(cubePrefab, new Vector3(0,0,0), Quaternion.Identity;
+Instantiate(cubePrefab, new Vector3(0,0,0), Quaternion.Euler(0,35,0);
+
+Quaternion.LookRotation 과 Transform.LookAt()중 lookAt이 더 편리하지만, LookRotation의 쓰임새도 분명히 있을 것이다...
+Vector3 dir = target - source //forward 
+Quaternion.LookRotation() 은 Vector forward 와 upward로 회전을 만든다.
+Quaternion.LookRotation(dir, Vector3.upward)
+
+Quaternion.Slerp is the equivalent of linear interpolation, but spherically 
+Vector3 dir = target - source;
+Quaternion targetRotation = Quaternion.LookRotation(dir); //위에서처럼 그냥 바로 보는 것이 아니라, slerp를 사용하기 위해선 target rotation을 설정한다.
+transform.rotation = Quaternion.Slerp(transform.rotation, targetRotation, Time.deltaTime*원하는 값)
+
+
+
+
+
+
+
+
+
+
+
+
+<Generics>
+Generics are a feature whereby classes and methods, amongst other things, can be passed a type as a parameter.
+This, in effect, allows you to program generically without knowing the exact type of the data you will be working with.
+
+GetComponent method uses a generic parameter to get the type of the component that it is looking for.
+GetComponent is a generic method.
+
+public T GenericMethod<T>(T param)
+{
+     return param;
+}
+
+
+
+

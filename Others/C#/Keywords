@@ -1,0 +1,56 @@
+Keywords
+
+https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/keywords/
+
+
+
+
+
+
+use "out" keyword in two contexts :
+1) as a parameter modifier, which lets you pass an argument to a method by reference rather than by value.
+2) in generic type parameter declarations for interfaces and delegates, which specifies that a type parameter is covariant.
+
+
+"ref" indicates a value that is passed by reference, and is used in four different contexts :
+1)*in a method signature and in a method call, to pass an argument to a method by reference
+2) in a method signature, to return a value to the caller by reference
+3) in a member body, to indicate that a refernce return value is stored locally as a reference...
+4) In a struct declaration to declare a ref struct or a readonly ref ...
+
+
+"abstract"
+https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/keywords/abstract
+
+
+type-testing and cast operators : "is" "as" "typeof" "()"
+https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/operators/type-testing-and-cast#as-operator
+
+
+
+
+try-catch
+https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/keywords/try-catch
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
